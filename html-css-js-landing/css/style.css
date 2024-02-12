@@ -191,6 +191,46 @@ section {
     text-align: left;
 }
 
+.diplom_main{
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 19px;
+    grid-template-areas: "B A"
+                         "B C";
+}
+
+.diplom_card:nth-child(1){
+    grid-area: A;
+}
+.diplom_card:nth-child(2){
+    grid-area: B;
+}
+.diplom_card:nth-child(3){
+    grid-area: C;
+}
+
+.diplom_card h2 {
+font-family: "TT Hoves";
+font-size: 58px;
+font-weight: 500;
+line-height: 68px;
+letter-spacing: 0.01em;
+text-align: left;
+text-transform: uppercase;
+}
+
+
+.diplom_card p {
+font-family: "TT Hoves";
+font-size: 27px;
+font-weight: 400;
+line-height: 38px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
 @media (max-width: 376px) {
     * {
         margin: 0px;
@@ -308,4 +348,50 @@ section {
         font-size: 13px;
         line-height: 19px;
     }
+
+    .diplom_main{
+        display: grid;
+        grid-template-columns: 328px;
+        grid-template-rows: 120px 229px 75px;
+        gap: 19px;
+        grid-template-areas: "A"
+                             "B"
+                             "C";
+    }
+    
+    .diplom_card:nth-child(1){
+        grid-area: A;
+    }
+    .diplom_card:nth-child(2){
+        grid-area: B;
+    }
+    .diplom_card:nth-child(3){
+        grid-area: C;
+    }
+    .diplom_card h2 {
+        font-family: "TT Hoves";
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: 0.01em;
+        text-align: left;        
+        }
+        
+    .diplom_card p {
+        font-family: "TT Hoves";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;    
+        }
+    
+    .diplom_card img {
+        width: 328px;
+        height: 229px;
+    }
+        
 }
+
+
+
