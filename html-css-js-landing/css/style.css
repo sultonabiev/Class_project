@@ -228,9 +228,32 @@ font-weight: 400;
 line-height: 38px;
 letter-spacing: 0em;
 text-align: left;
-
 }
 
+.splide h3 {
+    font-family: "TT Hoves";
+    font-size: calc(2.66vw + 24px);
+    font-weight: 500;
+    line-height: 68px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.splide p {
+    font-family: "TT Hoves";
+    font-size: calc(1vw + 14.3px);
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 24px;
+}
+.splide img {
+    width: calc(19.8vw + 254px);
+    height: calc(19.8vw + 254px);
+}
 @media (max-width: 376px) {
     * {
         margin: 0px;

@@ -6,6 +6,7 @@
     <title>Landing</title>
     <link rel="stylesheet" href="./html-css-js-landing/css/style.css">
     <link rel="stylesheet" href="./html-css-js-landing/fonts/fonts.css">
+    <link rel="stylesheet" href="./html-css-js-landing/splide-4.1.3/dist/css/splide.min.css">
 </head>
 <body>
     <div class="bg_img">
@@ -82,6 +83,33 @@
             <div class="diplom_card"><p>Он дополнит твое портфолио и выгодно <br> выделит тебя на собеседовании<br> в компанию мечты</p></div>
         </div>
     </section>
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <h3>Все еще сомневаешься?</h3>
+        <p>Тогда последний козырь: после каждого выпуска мы устраиваем крутые вечеринки в честь вручения дипломов!</p>
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"><img src="./html-css-js-landing/img/slider-image-1.png" alt=""></li>
+                <li class="splide__slide"><img src="./html-css-js-landing/img/slider-image-2.png" alt=""></li>
+                <li class="splide__slide"><img src="./html-css-js-landing/img/slider-image-3.png" alt=""></li>
+                <li class="splide__slide"><img src="./html-css-js-landing/img/slider-image-4.png" alt=""></li>
+                <li class="splide__slide"><img src="./html-css-js-landing/img/slider-image-5.png" alt=""></li>
+            </ul>
+        </div>
+      </section>
+      
+
+    <script src="./html-css-js-landing/splide-4.1.3/dist/js/splide.min.js"></script>
+
     <script src="./html-css-js-landing/js/script.js"></script>
+
+    <script>
+        var splide = new Splide( '.splide', {
+        type    : 'loop',
+        perPage : 3,
+        autoplay: true,
+        } );
+
+        splide.mount();
+    </script>
 </body>
 </html>
