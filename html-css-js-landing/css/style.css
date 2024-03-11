@@ -7,19 +7,22 @@
 }
 
 section {
-    margin: 0 calc(10.6vw - 16px) 160px;
+    padding: 0 calc(10.6vw - 16px) calc(11vw + 18.4px);
 }
 
 .logo {
     width: calc(8.8vw + 182px);
-    margin-top: calc(0.3vw + 41px);
-    margin-bottom: calc(6.3vw + 4.3px);
+    margin-top: 37px;
+    margin-bottom: 85px;
+
 }
 
 .course_info {
     display: flex;
     gap: 30px 161px;
     margin-bottom: 76px;
+    flex-wrap: wrap;
+
 }
 
 .course_data {
@@ -28,35 +31,40 @@ section {
 }
 
 .title {
-    font-size: 21px;
+    font-size: calc(0.55vw + 14px);
     line-height: 140%;
+
 }
 
 .value {
-    font-size: 21px;
+    font-size: calc(0.55vw + 14px);
     font-weight: 700;
     line-height: 140%;
 }
 
 .html_css_js h1 {
-    font-family: "Chava";
-    font-size: 80px;
+    font-family: 'Chava';
+    font-size: calc(4.2vw + 26.2px);
     line-height: 110%;
     margin-bottom: 40px;
+
+
 }
 
 .html_css_js p {
-    font-size: 27px;
+    font-size: calc(1vw + 14.2px);
     font-weight: 300;
     line-height: 140%;
-    max-width: 1030px;
+    max-width: calc(66vw + 77px);
     margin-bottom: 20px;
+
 }
 
 .btn_wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 20px 30px;
+
 }
 
 .primary {
@@ -66,6 +74,10 @@ section {
     padding: 20px 0;
     border: 2px solid #6E3ABA;
     color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .secondary {
@@ -73,348 +85,796 @@ section {
     border-radius: 12px;
     padding: 20px 0;
     background-color: white;
+    cursor: pointer;
     border: 2px solid #6E3ABA;
     color: #6E3ABA;
-    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
 }
 
-.bg_img {
+.bigimage {
     background-image: url(../img/html-css-js.svg);
     background-repeat: no-repeat;
-    background-position: top calc(4.87vw + 58.7px) right calc(6.2vw + 21.29px);
-    background-size: calc(19.4vw + 71.21px);
+    background-position: top calc(4.86vw + 58.7px) right calc(6vw - 18.5px);
+    background-size: calc(24vw + 89.2px);
 }
+
+
 .timer {
     background-color: #6E3ABA;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 160px;
+
 }
 
+
 .timer h2 {
-    color: #FFF;
-    font-size: calc(2vw + 26.51px);
+    color: #FFFFFF;
+    font-size: calc(1.2vw + 20px);
     font-weight: 700;
-    letter-spacing: 1.56px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 57px;
+    margin-bottom: 3vw;
+
 }
 
 .timer_container {
     display: flex;
-    gap: 85px;
-    margin-bottom: 57px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 3vw;
+
 }
 
 .timer_card {
-    flex-basis: 251px;
-    flex-shrink: 0;
+    flex-basis: calc(25% - 1vw);
+    flex-grow: 1;
+    font-size: calc(3vw + 10px);
 }
+
 .timer_value {
-    color: #2F1D4E;
-    font-family: "CHAVA";
-    font-size: 174px;
+    font-family: "Chava";
+    color: #2F1d4e;
+    font-size: calc(12.6vw + 12.6px);
     line-height: 107.5%;
+    text-align: center;
 }
 
 .timer_text {
-    color: #2F1D4E;
-    text-align: center;
-    font-size: 27px;
+    color: #2F1d4e;
+    font-size: calc(1vw + 5px);
     font-weight: 500;
     text-transform: uppercase;
-    margin-left: 20px;
+    text-align: center;
 }
 
-.second_page {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    margin: calc(11vw + 18px) calc(10.6vw - 16px);
+
+.section1_card img {
+    width: 210px;
+    padding-bottom: 10px;
 }
 
-.second_page h2 {
-    font-family: TT Hoves;
+.section1_card {
+    flex-basis: 450px;
+    flex-grow: 1;
+}
+
+.section_container {
+    display: flex;
+    gap: 70px;
+    padding-bottom: 57px;
+}
+
+@media (max-width:700px) {
+    .section_description {
+        flex-direction: column;
+    }
+
+    .section_container {
+        flex-direction: column;
+    }
+}
+
+.section1 h1 {
+    text-transform: uppercase;
     font-size: 58px;
     font-weight: 500;
-    line-height: 68px;
-    letter-spacing: 0.01em;
-    text-align: left;
-    width: 796px;
-    margin-bottom: 50px;
-    margin-left: 10px;
-    padding-left: 10px;
+    font-size: calc(2.6vw + 24px);
+    padding: 20px;
+    margin-bottom: 90px;
 }
 
-.smiles {
+.section1_card h3 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+
+.section1_card p {
+    color: rgb(34, 34, 34);
+    font-family: TT Hoves;
+    font-size: calc(0.7vw + 17px);
+
+}
+
+
+
+
+.head_container h1 {
+    font-size: calc(2.6vw + 24px);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 90px;
+}
+
+.legend h3 {
+    font-weight: 500;
+    font-size: calc(2.66vw + 23px);
+    margin-bottom: calc(5.5vw + 19px);
+}
+
+
+
+.legend_wrapper {
     display: flex;
-    gap: 85px;
-    margin-bottom: 57px;
+    gap: 20px 51px;
     flex-wrap: wrap;
 }
 
-.smiles_container {
-    width: 50%;
-    box-sizing: border-box;
-    flex-grow: 1;
-    width: 500px;
+.legend_img {
+    flex-basis: calc(7.7vw + 299px);
+    flex-grow: 0;
+    width: calc(7.74vw + 299.88px);
 }
 
-.smiles_container img {
-    width: 210px;
-    height: 210px;
-    object-fit: cover;
-    margin-bottom: 20px;
+
+
+.legend_text_wrapper h3 {
+    margin-bottom: calc(1.10vw + 5.84px);
+    font-size: calc(1.1vw + 33.84px);
+    font-weight: 700;
+    line-height: calc(1.46vw + 39.25px);
+    flex-wrap: nowrap;
 }
 
-.smiles_container h3 {
-    margin-bottom: 10px;
+.legend_text_wrapper .subtitle {
+    font-size: calc(1vw + 14.26px);
+    margin-bottom: calc(5.25vw + 22.8px);
 }
 
-.smile_title {
-    font-family: TT Hoves;
-    font-size: 27px;
-    font-weight: 600;
-    line-height: 38px;
-    letter-spacing: 0em;
-    text-align: left;    
-    font-weight: bolder;
-}
-
-.smile_text {
-    font-family: TT Hoves;
-    font-size: 27px;
-    font-weight: 400;
-    line-height: 38px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.diplom_main{
+.legend_icons {
     display: grid;
-    grid-template-columns: 450px 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 19px;
-    grid-template-areas: "B A"
-                         "B C";
+    gap: calc(1.10vw + 25.84px) calc(8.84vw - 23.27px);
+    grid-template-areas: "A B"
+        "C D";
 }
 
-.diplom_card:nth-child(1){
+.legend_cards:nth-child(1) {
     grid-area: A;
 }
-.diplom_card:nth-child(2){
+
+.legend_cards:nth-child(2) {
     grid-area: B;
 }
-.diplom_card:nth-child(3){
+
+.legend_cards:nth-child(3) {
     grid-area: C;
 }
 
-.diplom_card h2 {
-font-family: "TT Hoves";
-font-size: 58px;
-font-weight: 500;
-line-height: 68px;
-letter-spacing: 0.01em;
-text-align: left;
-text-transform: uppercase;
+.legend_cards:nth-child(4) {
+    grid-area: D;
+}
+
+.legend_cards p {
+    font-size: calc(0.55vw + 13.92px);
+    max-width: 250px;
+}
+
+@media (max-width:600px) {
+    .legend_icons {
+        grid-template-areas: "A D"
+            "B C";
+    }
+}
+
+.diplom {
+    display: grid;
+    grid-gap: 20px 10px;
+    grid-template-columns: 430px 1fr;
+    grid-template-areas: "img h1"
+        "img p"
+}
+
+.img_diplom {
+    width: calc(11.28vw + 285px);
+    grid-area: img;
+    max-width: 100%;
+
+}
+
+.diplom_text {
+    font-size: calc(2.65vw + 24px);
+    font-weight: 500;
+    text-transform: uppercase;
+    grid-area: h1;
+}
+
+.diplom_obzac {
+    font-size: calc(1.10vw + 12.84px);
+    grid-area: p;
+    font-weight: 400;
+}
+
+.slider_card {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.testimonials-slider h3 {
+    font-weight: 500;
+    font-size: calc(2.65vw + 24px);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.splide__slide {
+    background: #F0F7FD;
+    border-radius: 12px;
+    padding: 50px 20px;
+}
+
+.splide__arrow {
+    display: none;
+}
+
+.splide__pagination__page {
+    display: none;
+}
+
+.youtube {
+    margin-bottom: calc(0.51vw + 14.54px);
+    width: 38px;
+    height: 28px;
+}
+
+.card_footer {
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+}
+
+.card_footer img {
+    border-radius: 50%;
+}
+
+.slider_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slider_card p {
+    font-size: 21px;
+    margin-bottom: 40px;
+}
+
+@media (max-width:600px) {
+    .diplom {
+        grid-template-columns: 1fr;
+        grid-template-areas: "h1"
+            "img"
+            "p";
+    }
+}
+
+.border {
+    border: 2px solid black;
+    padding: calc(4.4vw + 23.4px) calc(2.7vw + 18px) calc(1.3vw + 18px) calc(5vw);
+    position: relative;
+}
+
+.border h3 {
+    margin-bottom: calc(1.8vw + 17px);
+}
+
+.programm ul {
+    list-style: none;
+    margin-bottom: 34px;
+
+    li {
+        border-bottom: 1px solid #A1A1A1;
+        font-size: calc(0.6vw + 14px);
+        font-weight: 400;
+        line-height: 140%;
+        padding: 24px 0;
+    }
 }
 
 
-.diplom_card p {
-font-family: "TT Hoves";
-font-size: 27px;
-font-weight: 400;
-line-height: 38px;
-letter-spacing: 0em;
-text-align: left;
+.lesson .primary {
+    display: block;
+    margin: 0 auto;
 }
 
-.splide h3 {
-    font-family: "TT Hoves";
-    font-size: calc(2.66vw + 24px);
+.border+.primary {
+    margin-top: 30px;
+    display: none;
+}
+
+#corner {
+    width: calc(10vw);
+
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
+
+@media (max-width:600px) {
+    .legend_icons {
+        grid-template-areas: "A D"
+            "B C";
+    }
+
+
+    .lesson .primary {
+        display: none;
+    }
+
+    .border+.primary {
+        display: block;
+    }
+}
+
+.text_school_card {
+    flex-basis: calc(6.63vw + 5px);
+    ;
+    flex-grow: 1;
+}
+
+.text_school_container {
+    display: flex;
+    gap: 70px;
+    padding-bottom: 57px;
+}
+
+@media (max-width:700px) {
+    .text_school_description {
+        flex-direction: column;
+    }
+
+    .text_school_container {
+        flex-direction: column;
+    }
+}
+
+
+.text_school h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: calc(2.6vw + 24px);
+    padding: 20px;
+    margin-bottom: calc(7.74vw - 9.11px);
+    ;
+}
+
+.text_school_card h3 {
+    margin-bottom: calc(1.1vw + 5.84px);
+    text-transform: uppercase;
+
+}
+
+.text_school_card p {
+    color: rgb(34, 34, 34);
+    font-family: TT Hoves;
+    font-size: calc(0.7vw + 17px);
+
+}
+.zarplata_text {
+    font-size: calc(2.65vw + 24px);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: calc(2.2vw + 11.68px);
+    line-height: calc(3vw + 28.35px);
+    letter-spacing: 0.01em;
+    width: calc(44.35vw + 161.21px);
+}
+
+.zarplata_obzac {
+    font-size: calc(1vw + 14.25px);
+    font-weight: 400;
+    width: calc(60.61vw + 100px);
+    margin-bottom: calc(1.76vw + 13.34px);
+}
+
+.img_zarplata {
+    width: calc(81.52vw + 21.46px);
+}
+
+.img_slider img {
+    width: 100%;
+    height: 100% !important;
+}
+
+.splide__slide {
+    padding: 0;
+}
+
+.image-slider h3 {
+    text-transform: uppercase;
+    font-size: calc(2.65vw + 24px);
+    padding-bottom: 20px;
+}
+
+.image-slider p {
+    font-size: calc(1vw + 14.27px);
+    padding-bottom: 20px;
+}
+
+
+.bg {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popUP {
+    background: #F0F7FD;
+    border-radius: 12px;
+
+    flex-basis: 326px;
+    flex-shrink: 0;
+    flex-grow: 0.7;
+
+    min-height: 423px;
+    height: 62vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+
+}
+
+.form h2 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+
+}
+
+.form input {
+    display: block;
+    width: calc(6.7vw + 242px);
+    border: 0;
+    border-bottom: 1px solid #A1A1A185;
+
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 10px;
+
+    outline: 0;
+    background: none;
+
+}
+
+.form input:first-child {
+    margin-bottom: 23px;
+}
+
+.closed {
+    display: none;
+}
+.signup_course {
+    display: flex;
+    background: #222222;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.textimg {
+    width: calc(16.35vw + 265.67px);
+    margin-right: 160px;
+}
+
+.textimg h1 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: calc(2.65vw + 24px);
+    width: calc(10.50vw + 289px);
     font-weight: 500;
     line-height: 68px;
     letter-spacing: 0.01em;
     text-align: left;
-    text-transform: uppercase;
-    margin-bottom: 14px;
+    padding-bottom: calc(4.30vw + 23.83px);
+    margin-top: 80px;
 }
 
-.splide p {
-    font-family: "TT Hoves";
-    font-size: calc(1vw + 14.3px);
+.course_list {
+    width:450px;
+    height:162px;
+    top: 431px;
+    left: 120px;
+}
+
+
+.course_list h5 {
+    font-size: calc(1vw + 14.27px);
+    color: #FFFFFF;
+    display: flex;
+
     font-weight: 400;
     line-height: 38px;
     letter-spacing: 0em;
-    text-align: left;
-    margin-bottom: 24px;
+    text-align: left; 
+    padding-bottom: 25px;
 }
-.splide img {
-    width: calc(19.8vw + 254px);
-    height: calc(19.8vw + 254px);
+
+.course_list img {
+    width: 28px;
+    padding-right: 10px;
+    padding-bottom: 25px;
 }
-@media (max-width: 376px) {
-    * {
-        margin: 0px;
-        border: 0px;
-        padding: 0px;
-    }
-    section {
-        margin: 0 10px 160px;
-    }
 
-    .logo {
-        width: 80%;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
+.course_list li {
+    display: flex;
+    font-size: calc(0.99vw + 14.27px);
+}
 
-    .course_info {
-        flex-direction: column;
-        gap: 15px;
-        margin-bottom: 38px;
-    }
+.footer_left {
+    width: calc(16.35vw + 265.67px);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 100px;
+}
 
-    .html_css_js h1 {
-        font-size: 40px;
-        margin-bottom: 20px;
-    }
-
-    .html_css_js p {
-        font-size: 14px;
-        max-width: 300px;
-        margin-bottom: 10px;
-    }
-
-    .btn_wrapper {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .primary, .secondary {
-        width: 100%;
-    }
-    .timer {
-        background-color: #6E3ABA;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        margin: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-    .timer h2 {
-        font-size: 16px;
-        margin-bottom: 14px;
-    }
-
-    .timer_container {
-        flex-direction: row;
-        gap: 21px;
-        margin-bottom: 14px;
-        width: 322px;
-        height: 78px;
-        top: 140px;
-        left: 24px;
-
-
-    }
-
-    .timer_card {
-        flex-basis: auto;
-        width: 50%;
-        text-align: center;
-        flex-shrink: 20;
-    }
-
-    .timer_value {
-        font-size: 43px;
-        flex-shrink: 20;
-    }
-
-    .second_page {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        margin: 10px;
-    }
-
-    .second_page h2 {
-        font-size: 29px;
-        line-height: 34px;
-        width: 398px;
-        margin-bottom: 25px;
-    }
-
-    .smiles {
-        flex-direction: column;
-        gap: 42px;
-        margin-bottom: 28px;
-    }
-
-    .smiles_container {
-        width: 100%;
-    }
-
-    .smiles_container img {
-        width: 105px;
-        height: 105px;
-    }
-
-    .smile_title {
-        font-size: 13px;
-        line-height: 19px;
-    }
-
-    .smile_text {
-        font-size: 13px;
-        line-height: 19px;
-    }
-
-    .diplom_main{
-        display: grid;
-        grid-template-columns: 328px;
-        grid-template-rows: 120px 229px 75px;
-        gap: 19px;
-        grid-template-areas: "A"
-                             "B"
-                             "C";
-    }
+.footer_form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
-    .diplom_card:nth-child(1){
-        grid-area: A;
+    width: calc(16.35vw + 265.67px);
+    flex-shrink: 0;
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 60px 69px 50px;
+    border-radius: 12px;
+    position: relative;
+    
+}
+.footer_form form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.sale{
+    width: 160px;
+    height: 160px;
+    background-color: #6E3ABA;
+    color: #fff;
+    font-weight: 700;
+    font-size: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    left: -80px;
+    top: -80px;
+}
+
+.footer_form_title {
+    text-transform: uppercase;
+    font-size: calc(0.44vw + 24.34px);
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer_form_subtitle {
+    font-size: calc(0.55vw + 14px);
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+
+.footer_input {
+    display: block;
+    width: calc(6.7vw + 242px);
+    border: 0;
+    border-bottom: 1px solid #A1A1A185;
+
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 10px;
+
+    outline: 0;
+    background: none;
+}
+
+.forma .primary {
+    width: calc(6.74vw + 241.72);
+    margin-bottom: 40px;
+}
+
+.description_form {
+font-size: 18px;
+font-weight: 600;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: center;
+padding-bottom: 10px;
+}
+
+.footer_left p{
+    width: calc(2.87vw + 316.22px);
+    font-size: calc(0.66vw + 9.51px);
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    .signup_course {
+      flex-direction: column;
     }
-    .diplom_card:nth-child(2){
-        grid-area: B;
-    }
-    .diplom_card:nth-child(3){
-        grid-area: C;
-    }
-    .diplom_card h2 {
-        font-family: "TT Hoves";
+    .textimg h1{
+        font-family: TT Hoves;
         font-size: 34px;
         font-weight: 500;
         line-height: 40px;
         letter-spacing: 0.01em;
-        text-align: left;        
-        }
-        
-    .diplom_card p {
-        font-family: "TT Hoves";
-        font-size: 18px;
+        text-align: left;
+    }
+
+    .course_list{
+        width: 328px;
+        height:124px;
+        top: 200px;
+        left: 23px;
+        gap: 20px;
+    }
+    
+    .course_list h5 {
+        font-size: calc(1vw + 14.27px);
         font-weight: 400;
         line-height: 25px;
         letter-spacing: 0em;
-        text-align: left;    
-        }
-    
-    .diplom_card img {
-        width: 328px;
-        height: 229px;
+        text-align: left;
+
+
     }
-        
+
+    .sale {
+        left: auto; 
+        right: 40px; 
+        top: 0; 
+        transform: translate(50%, -50%);
+        width: 105px;
+        height: 105px;
+        font-size: 40px;
+      }
+
+    .forma .primary {
+        width: 267px;
+        height: 61px;
+        top: 274px;
+        left: 30px;
+        padding: 20px 0px 20px 0px;
+        border-radius: 12px;
+        gap: 10px;
+    }
+
+    .footer_form_title{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 214px;
+    height: 31px;
+    }
+
+    .footer_form_subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 200px;
+    height: 22px;
+    }
+  }
+
+  .waiting_for_you {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:   "h3 h3"
+                         "imgg text"
+                        
+    
+  }
+  .waiting_for_you h3 {
+    text-transform: uppercase;
+    font-size: calc(2.65vw + 24px);
+    font-weight: 500;
+    line-height: calc(3.09vw + 28.39px);
+    padding-left: 54px;
+    width: calc(55.24vw + 120.81px);
+    padding-bottom: 30px;
+    grid-area: h3;
+  }
+
+  .big_image {
+    grid-area: imgg;
+  }
+
+  .waiting_for_you img {
+    width: calc(19.11vw + 260px);
+  }
+
+  .text_waiting{
+    width: calc(21.21vw + 248.44px);
+    margin-top: 58px;
+    grid-area: text;
+  }
+
+  .text_waiting p{
+    font-size: calc(0.33vw + 16.75px);
+    font-weight: 400;
+    line-height: calc(0.46vw + 23.45px);
+    padding-bottom: 25px;
+  }
+
+  @media (max-width:600px) {
+    .waiting_for_you {
+        grid-template-columns: 1fr;
+        grid-template-areas: "h3"
+            "imgg"
+            "text";
+    }
+    .waiting_for_you h3 {
+        padding-left: 0;
+    }
 }
-
-
-
